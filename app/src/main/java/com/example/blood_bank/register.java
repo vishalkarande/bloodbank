@@ -85,6 +85,8 @@ public class register extends AppCompatActivity {
 
                        String username = snapshot.child("bloodgroup").getValue().toString();
 
+                       display.setText(username);
+
                        Toast.makeText(register.this, "value "+username, Toast.LENGTH_LONG).show();
                    }
 
